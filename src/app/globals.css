@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/********* TEXT *********/
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+/********* SUB TITLE MAIN *********/
+.titleh2 {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  color: #171717;
+}
+
+.titleh2 span {
+  position: relative;
+  color: #4F4A4A;
+  font-weight: 500;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .titleh2 {
+    font-size: 30px;
+    flex-direction: column;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .titleh2 span {
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+}
+
+/********* ELEMENTS *********/
+.btn-primary {
+  background-color: #153065;
+  border: 1px solid #FFFFFF;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #153065;
+  transform: scale(0.92) !important;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  color: #153065;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+  border: 1px solid #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  transform: scale(0.92);
+}
+
+.btn-outline {
+  background: transparent;
+  padding: 20px 30px;
+  color: #FFFFFF;
+  border-radius: 50rem;
+  transition: all 0.2s ease;
+  border: 1px solid #FFFFFF;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-outline:hover {
+  border: 1px solid #153065;
+  background-color: #ffffff2e;
+}
+
+.btn-purple {
+  background: transparent;
+  padding: 20px 30px;
+  background-color: #153065;
+  color: #FFFFFF;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+  border: 1px solid #FFFFFF;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-purple:disabled,
+.btn-purple:disabled:hover {
+  background-color: #aaa2f9;
+  border: unset;
+  cursor: default;
+}
+
+.btn-purple:hover {
+  transform: scale(0.92);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  padding: 20px 30px;
+  color: #2E2E2E;
+  border-radius: 50rem;
+  transition: all 0.2s ease;
+  border: 1px solid #2E2E2E;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-outline-dark:hover {
+  border: 1px solid #171717;
+}
+
+@media (max-width: 640px) {
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-purple,
+  .btn-outline-dark {
+    padding: 0.8rem 1.5rem;
+  }
+
+}
+
+/********* END ELEMENTS *********/
+
+/********* RESP *********/
+@media (max-width: 1536px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}
+
+@media (max-width: 475px) {}
+
+/********* END RESP *********/
+
+/********* CONTAINER *********/
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1450px;
+  }
+}
