@@ -1,7 +1,3 @@
 # Silnice
 
-### Pracovní doba: 5h 35min
-
-## Todo
-
-Vsechno hotovo
+### Pracovní doba: 6h 0min

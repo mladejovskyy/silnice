@@ -5,7 +5,6 @@ import Modal from "./_components/Modal/Modal";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './globals.css';
-import './page.css';
 import './style.css';
 import {useEffect, useState} from "react";
 
