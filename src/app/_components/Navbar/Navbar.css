@@ -166,6 +166,7 @@ nav .btn-purple img {
 
 @media (max-width: 425px) {
     nav img {
-        height: 40px;
+        height: 40px !important;
+        transform: translateY(0px);
     }
 }

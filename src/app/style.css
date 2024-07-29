@@ -5,7 +5,6 @@
 
 /*** Templates ***/
 .heading4 {
-    font-weight: bold;
     text-transform: uppercase;
     color: var(--color-main);
     letter-spacing: 10%;
@@ -75,11 +74,11 @@
 
 @media (max-width: 1536px) {
     .header {
-        background-size: contain;
-        background-position: bottom;
+        background-position: center -80%
     }
 }
 
+    
 @media (max-width: 768px) {
     .header .container h1 {
         background-position: 0 70%;
@@ -216,11 +215,11 @@
 @media (max-width: 475px) {
     .whyus .card {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2.5rem;
     }
 
     .whyus .card:nth-of-type(3) {
-        margin-top: 1rem;
+        margin-top: 2.5rem;
     }
 
     .whyus .card .paragraph {

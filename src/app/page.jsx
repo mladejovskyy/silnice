@@ -122,7 +122,7 @@ export default function Home() {
                             let index = `service${i+1}`;
                             return (
                                 <div key={index} id={service.id} className={`card flex flex-col justify-between p-10 ${service.class}`} data-aos="fade-up" data-aos-once="true">
-                                    <div className="text lg:pb-16 pb-6">
+                                    <div className="text lg:pb-16 pb-12">
                                         <h3 className='heading2'>{service.title}</h3>
                                         <p className='lg:w-2/3 md:5/6 mt-4'>{service.description}</p>
                                     </div>
