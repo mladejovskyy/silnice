@@ -8,9 +8,6 @@ export const metadata = {
     title: 'Opravy Silnic Vysočina | Nejlepší Kvalita Za Skvělé Ceny',
     description: 'Poskytujeme kvalitní a cenově dostupné opravy silnic na Vysočině. Naše služby zaručují nejlepší kvalitu za skvělé ceny. Kontaktujte nás pro spolehlivou opravu vašich komunikací!',
     keywords: 'Opravy silnic Vysočina',
-    openGraph: {
-        images: '/og-image.webp',
-    },
 }
 
 export default function RootLayout({ children }) {
