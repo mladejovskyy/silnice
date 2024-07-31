@@ -1,20 +1,10 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import './Modal.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Modal = ({ isOpen, onClose, imageUrl }) => {
-    useEffect(() => {
-        //load animations
-        AOS.init({
-            disable: function () {
-                var maxWidth = 768;
-                return window.innerWidth < maxWidth;
-            }
-        });
-    }, [])
-
+const Modal = ({isOpen, onClose, imageUrl}) => {
     // Close the modal when clicking outside of it
     const handleClickOutside = (event) => {
         if (event.target.className === 'modal-overlay') {

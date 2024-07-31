@@ -6,7 +6,7 @@ footer {
 
 footer .row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 0.3fr 1fr 1fr 1fr;
 }
 
 footer .row .item {
@@ -97,10 +97,22 @@ footer .bottom-content a img {
     width: 110px;
 }
 
+footer .footer-email {
+    white-space: nowrap;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+
+@media (max-width: 1280px) {
+    footer .row {
+        grid-template-columns: 1fr 0.5fr 1fr 1fr 1.5fr;
+    }
+}
+
 @media (max-width: 1024px) {
     footer .row {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1.5fr 1fr 1fr;
         gap: 2rem;
     }
 
@@ -112,7 +124,7 @@ footer .bottom-content a img {
 @media (max-width: 768px) {
     footer .row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1.7fr;
         gap: 2rem;
     }
 

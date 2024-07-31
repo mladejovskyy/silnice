@@ -25,6 +25,7 @@ nav img {
     cursor: pointer;
     transform: translateY(20px);
     transition: all .2s ease-in-out;
+    z-index: 101;
 }
 
 .nav-bg-scroll nav img {
@@ -64,11 +65,17 @@ nav .btn-purple {
     padding: 12px 32px;
 }
 
-nav .btn-purple img {
-    width: 18px;
+@media (max-width: 1280px) {
+    nav.container {
+        padding: 0 1rem !important;
+    }
 }
 
-@media(max-width: 1026px) {
+@media (max-width: 1026px) {
+    nav.container {
+        padding: 0 2.5rem !important;
+    }
+
     nav img {
         height: 80px !important;
     }
@@ -88,7 +95,7 @@ nav .btn-purple img {
     }
 
     nav img {
-        margin: 1.25rem 0;
+        margin: 0.5rem 0;
     }
 
     nav .nav-links {
@@ -104,10 +111,19 @@ nav .btn-purple img {
         padding: 3rem 0em;
         padding-bottom: 2rem;
         margin-left: 0;
-        margin-top: 0; /* Zmena tady */
-        gap: 3em;
+        margin-top: 0;
+        gap: 1.25em;
         height: fit-content;
         background-color: #F3F4F7;
+    }
+
+    .nav-bg nav .nav-links {
+        top: 12vh;
+        transition: all .2s ease-in-out;
+    }
+
+    .nav-bg.nav-bg-scroll nav .nav-links {
+        top: 6.5vh;
     }
 
     nav .nav-links li {
@@ -115,7 +131,6 @@ nav .btn-purple img {
     }
 
     nav .nav-links .btn-purple {
-        padding: 0 40px !important;
         display: inline-flex !important;
         margin-top: 0 !important;
     }

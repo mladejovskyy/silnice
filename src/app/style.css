@@ -1,12 +1,7 @@
-/*** VARIABLES ***/
-:root {
-    --color-main: #153065;
-}
-
 /*** Templates ***/
 .heading4 {
     text-transform: uppercase;
-    color: var(--color-main);
+    color: #153065;
     letter-spacing: 10%;
     font-weight: 800;
 }
@@ -23,8 +18,8 @@
 }
 
 .paragraph {
-    font-size: 1rem;
-    line-height: 160%;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 @media (max-width: 1280px) {
@@ -45,7 +40,7 @@
     }
 
     .heading2 {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -59,11 +54,14 @@
 .header .container {
     padding-top: 20vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header .container h1 {
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: auto;
     background: url('/images/text-bg-clip.webp') no-repeat center center;
     background-size: cover;
@@ -72,16 +70,42 @@
     color: transparent;
 }
 
+.header .container .paragraph {
+    margin-top: 21px;
+    max-width: 550px;
+}
+
+.header .container .row {
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .container .btns-row {
+    margin-top: 46px;
+}
+
 @media (max-width: 1536px) {
     .header {
         background-position: center -80%
     }
 }
 
-    
+
 @media (max-width: 768px) {
     .header .container h1 {
         background-position: 0 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding-bottom: 10vh;
+    }
+
+    .header .container h1 {
+        font-size: 2rem;
     }
 }
 
@@ -93,8 +117,18 @@
 
 
 /*** OUR CLIENTS ***/
+.ourclients {
+    padding-top: 50px;
+}
+
 .ourclients .row h2 {
     text-align: center;
+}
+
+.ourclients .images-row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .ourclients .images-row img {
@@ -114,11 +148,53 @@
 }
 
 /*** OUR SERVICES ***/
-.services .container .row .card {
-    width: 49%;
-    height: auto;
+.services {
+    padding-top: 103px;
+}
+
+.services .row:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .row .left {
+    max-width: 677px;
+}
+
+.services .row .right {
+    display: grid;
+    align-items: center;
+}
+
+.services .card {
     color: #fff;
     background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services .cards-row {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.services .card {
+    padding: 36px 38px 33px 38px;
+}
+
+.services .card div p {
+    margin-top: 18px;
+}
+
+.services .card div {
+    margin-bottom: 97px;
+}
+
+.services .card button {
+    width: 50%;
 }
 
 .services .container .row .card.asfaltovani {
@@ -134,41 +210,56 @@
 }
 
 @media (max-width: 1280px) {
-    /*.services .card {*/
-    /*    height: 33vh !important;*/
-    /*}*/
-
-    .services .btn-secondary {
+    .services .card button {
         width: 80%;
     }
 }
 
-@media (max-width: 768px) {
-    /*.services .card {*/
-    /*    height: 30vh !important;*/
-    /*}*/
-
-    .services .btn-secondary {
+@media (max-width: 1280px) {
+    .services .card button {
         width: 100%;
     }
 }
 
-@media (max-width: 475px) {
-    .services .container .row {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .services {
+        padding-top: 70px;
     }
 
+    .services .row:nth-of-type(1) {
+        flex-wrap: wrap;
+    }
+
+    .services .cards-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .services .row .right button {
+        margin-top: 20px;
+    }
+
+    .services .card .text {
+        margin-bottom: 50px;
+        max-width: 70%;
+    }
+
+    .services .card button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 475px) {
     .services .right {
         margin-top: 1rem;
     }
 
-    .services .container .row:nth-of-type(2) {
-        flex-wrap: wrap;
+    .services .card .text {
+        max-width: 100%;
     }
 
-    .services .container .row .card {
-        width: 100%;
-        /*height: auto !important;*/
+    .services .card button {
+        width: 90%;
     }
 
     .services .container .row .card:nth-of-type(2) {
@@ -181,46 +272,76 @@
     background: url('/images/whyusbg.webp') no-repeat center center;
     background-size: cover;
     min-height: 40vh;
+    margin-top: 85px;
+    padding-bottom: 96px;
+}
+
+.whyus .container .row:nth-of-type(1) {
+    padding-top: 76px;
+    margin-bottom: 48px;
+}
+
+.whyus .row:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.whyus .card .text {
+    margin-top: 24px;
 }
 
 .whyus .card .paragraph {
-    width: 75% !important;
+    margin-top: 12px;
+    max-width: 80% !important;
 }
 
 .whyus .image {
-    background-color: var(--color-main);
+    background-color: #153065;
     width: 75px;
     height: 75px;
     border-radius: 0.3rem;
 }
 
-@media (max-width: 768px) {
-    .whyus .row.flex {
-        flex-wrap: wrap;
-    }
-
-    .whyus .card {
-        width: 50%;
+@media (max-width: 1024px) {
+    .whyus .row:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .whyus .card:nth-of-type(3) {
         margin-top: 3rem;
     }
+}
 
+@media (max-width: 768px) {
     .whyus {
         padding-bottom: 5rem;
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 640px) {
+    .whyus {
+        margin-top: 70px;
+    }
+
+    .whyus .row:nth-of-type(2) {
+        grid-template-columns: 1fr;
+    }
+
+    .whyus .container .row:nth-of-type(1) {
+        margin-bottom: 0;
+    }
+
     .whyus .card {
-        width: 100%;
         margin-top: 2.5rem;
     }
 
     .whyus .card:nth-of-type(3) {
         margin-top: 2.5rem;
     }
+}
+
+@media (max-width: 475px) {
+
 
     .whyus .card .paragraph {
         width: 90% !important;
@@ -229,31 +350,106 @@
 }
 
 /*** ABOUT US ***/
-.aboutus .container .row .left .checks .check img {
+.aboutus {
+    margin-top: 115px;
+}
+
+.aboutus .row {
+    display: flex;
+}
+
+.aboutus .text {
+    margin-top: 20px;
+}
+
+.aboutus .text p:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+.aboutus .checks {
+    margin-top: 35px;
+}
+
+.aboutus .check {
+    margin-top: 16px;
+    display: flex;
+    justify-items: center;
+}
+
+.aboutus .left .checks .check img {
     height: 30px;
     height: 30px;
 }
 
-.aboutus .container .row .left .text .highlight {
-    color: var(--color-main);
+.aboutus .left .text .highlight {
+    color: #153065;
     font-weight: 500;
 }
 
+.aboutus .button {
+    margin-top: 63px;
+}
+
 @media (max-width: 768px) {
+    .aboutus {
+        margin-top: 70px;
+    }
+
     .aboutus .container .row {
         flex-wrap: wrap;
+    }
+
+    .aboutus .text {
+        max-width: 90%;
+    }
+
+    .aboutus .checks {
+        margin-top: 0.6rem;
+    }
+
+    .aboutus .button {
+        margin-top: 3rem;
+        margin-bottom: 2.2rem;
     }
 }
 
 /*** PUSOBNOST ***/
+.pusobnost {
+    padding-top: 95px;
+}
+
 .pusobnost .container {
     background: url('/images/pusobnostbg.webp') no-repeat center center;
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
 
-.pusobnost .container .row .left h2, .pusobnost .container .row .left h4 {
+.pusobnost .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pusobnost h2, .pusobnost h4 {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .pusobnost {
+        padding-top: 70px;
+    }
+
+    .pusobnost .row {
+        flex-direction: column;
+    }
+
+    .pusobnost h4, .pusobnost h2 {
+        text-align: center;
+    }
+
+    .pusobnost .right {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 475px) {
@@ -267,34 +463,91 @@
 }
 
 /*** GALLERY ***/
+.gallery {
+    margin-top: 100px;
+}
 
+.gallery .images-row {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.gallery .images-row .left, .gallery .images-row .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 1280px) {
+    .gallery .images-row .left, .gallery .images-row .right, .gallery .images-row {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery .images-row .left, .gallery .images-row .right, .gallery .images-row {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .gallery .images-row .left, .gallery .images-row .right, .gallery .images-row {
+        gap: 10px;
+    }
+}
 
 /*** CONTACT ***/
 .contact {
     background: url('/images/contactbg.webp') no-repeat center center;
     background-size: cover;
-    padding: 8vh 0;
+    padding: 53px 0 81px 0;
     text-align: center;
+    margin-top: 120px;
+}
+
+.contact .row:nth-of-type(1) {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.contact .row:nth-of-type(2) {
+    margin-top: 48px;
+    display: grid;
+    place-items: center;
+
 }
 
 .contact .container .row h2, .contact .container .row h4 {
     color: #fff;
 }
 
-.contact .container .row button {
-    transform: scale(1.15);
-}
-
-.contact .container .row button:hover {
-    transform: scale(1.07);
-}
-
 .contact .container .row img {
-    height: 26px;
+    height: 34px;
+}
+
+.contact button {
+    font-size: 26px;
+    padding: 20px 34px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin-top: 70px;
+    }
 }
 
 @media (max-width: 475px) {
     .contact h2 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }
