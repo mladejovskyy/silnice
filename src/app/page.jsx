@@ -23,9 +23,6 @@ export default function Home() {
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({behavior: 'smooth'});
-                if (window.innerWidth <= 1026) {
-                    setOpen(false);
-                }
             }
         }, 200);
     };

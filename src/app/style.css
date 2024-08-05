@@ -97,7 +97,10 @@ html {
 }
 
 @media (max-width: 1024px) {
-    background: #F3F4F7 url('/images/headerbgmd.webp') no-repeat center 10vh;
+    .header {
+        background: url('/images/headerbgmd.webp') no-repeat center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {
