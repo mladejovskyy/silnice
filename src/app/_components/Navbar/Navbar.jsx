@@ -1,15 +1,9 @@
 "use client"
 import {useState, useEffect} from 'react'
 import "./Navbar.css"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Navbar() {
-    useEffect(() => {
-        //load animations
-        AOS.init();
-    }, [])
-
     //let navigate = useNavigate()
     const [open, setOpen] = useState(false);
     const [mobile, setMobile] = useState(false);

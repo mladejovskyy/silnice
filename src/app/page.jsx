@@ -12,6 +12,11 @@ import Link from 'next/link'
 export default function Home() {
     const [isModalOpen, setModalOpen] = useState(false);
 
+    useEffect(() => {
+        //load animations
+        AOS.init();
+    }, [])
+
     const scrollToTarget = (targetId) => {
         //navigate("/")
         setTimeout(() => {
@@ -179,7 +184,6 @@ export default function Home() {
 
                     </div>
                 </div>
-
             </section>
 
             <section className="aboutus" id="aboutus">

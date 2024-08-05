@@ -84,7 +84,7 @@ p {
     color: #fff;
     border-radius: 1px;
     transition: all 0.15s ease;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
 }
@@ -106,7 +106,8 @@ p {
 }
 
 .btn-secondary:hover {
-    background-color: #ffffff;
+    background-color: #F3F4F7;
+    border-color: #F3F4F7;
 }
 
 .btn-outline {
@@ -173,7 +174,7 @@ p {
     .btn-outline,
     .btn-purple,
     .btn-outline-dark {
-        padding: 0.8rem 1.5rem;
+        padding: 1.3rem 2.5rem;
     }
 
 }

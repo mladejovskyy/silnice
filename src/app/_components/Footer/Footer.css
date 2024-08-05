@@ -6,7 +6,7 @@ footer {
 
 footer .row {
     display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.8fr 0.7fr 0.7fr 1fr;
 }
 
 footer .row .item {

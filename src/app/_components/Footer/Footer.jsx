@@ -55,7 +55,7 @@ export default function Footer() {
                 <div className="bottom-content">
                     <p>{new Date().getFullYear()} © Copyright Opravy komunikací vysočina s.r.o. Všechna práva
                         vyhrazena</p>
-                    <a href='https://redesigner.cz/' target='_blank' rel="noopener noreferrer">Vytvořil <img
+                    <a href='https://redesigner.cz/' target='_blank' rel="noopener noreferrer">Web na míru od <img
                         src='/images/redesigner_logo.webp'
                         alt='Naše firma tvoří více než jen web, jsme partněři pro online růst' draggable="false"
                         loading="lazy" placeholder="blur"/></a>

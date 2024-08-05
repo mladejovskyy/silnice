@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 /*** Templates ***/
 .heading4 {
     text-transform: uppercase;
@@ -92,6 +96,9 @@
     }
 }
 
+@media (max-width: 1024px) {
+    background: #F3F4F7 url('/images/headerbgmd.webp') no-repeat center 10vh;
+}
 
 @media (max-width: 768px) {
     .header .container h1 {
@@ -105,13 +112,13 @@
     }
 
     .header .container h1 {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 }
 
 @media (max-width: 475px) {
     .header .container h1 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -420,6 +427,7 @@
 
 .pusobnost .container {
     background: url('/images/pusobnostbg.webp') no-repeat center center;
+    background-size: cover;
     padding-top: 7vh;
     padding-bottom: 7vh;
 }

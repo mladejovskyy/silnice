@@ -1,5 +1,5 @@
 .nav-bg {
-    width: 100%; /* Zmena tady */
+    width: 100vw;
     position: fixed;
     left: 0;
     top: 0;
@@ -108,7 +108,7 @@ nav .btn-purple {
         align-items: center;
         z-index: 1000;
         justify-content: flex-start !important;
-        padding: 3rem 0em;
+        padding: 1rem 0em 3rem 0em;
         padding-bottom: 2rem;
         margin-left: 0;
         margin-top: 0;
@@ -123,7 +123,7 @@ nav .btn-purple {
     }
 
     .nav-bg.nav-bg-scroll nav .nav-links {
-        top: 6.5vh;
+        top: 9.5vh;
     }
 
     nav .nav-links li {
