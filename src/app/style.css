@@ -520,7 +520,7 @@ html {
 @media (max-width: 640px) {
 
     .gallery .images-row .left, .gallery .images-row .right, .gallery .images-row {
-        gap: 10px;
+        gap: 7px;
     }
 }
 
