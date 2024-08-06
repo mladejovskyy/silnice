@@ -498,8 +498,16 @@ html {
 }
 
 @media (max-width: 1024px) {
+    .gallery .images-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .gallery .images-row .left, .gallery .images-row .right, .gallery .images-row {
-        gap: 16px;
+        gap: 10px;
+    }
+
+    .gallery .images-row .middle {
+        display: none;
     }
 }
 
