@@ -13,17 +13,20 @@ html {
 .heading2 {
     font-weight: 600;
     font-size: 2.25rem;
+    color: #131313;
 }
 
 .heading3 {
     font-size: 1.375rem;
     line-height: 140%;
     font-weight: 500;
+    color: #131313;
 }
 
 .paragraph {
     font-size: 18px;
     line-height: 1.6;
+    color: #3C3C3C;
 }
 
 @media (max-width: 1280px) {
@@ -79,6 +82,10 @@ html {
     max-width: 550px;
 }
 
+.header .container .paragraph b {
+    color: #000;
+}
+
 .header .container .row {
     max-width: 730px;
     display: flex;
@@ -100,6 +107,10 @@ html {
     .header {
         background: url('/images/headerbgmd.webp') no-repeat center center;
         background-size: cover;
+    }
+
+    .header .container h1 {
+        color: #131313;
     }
 }
 
@@ -193,6 +204,10 @@ html {
 
 .services .card {
     padding: 36px 38px 33px 38px;
+}
+
+.services .card h3 {
+    color: #fff;
 }
 
 .services .card div p {
