@@ -53,7 +53,7 @@ html {
 
 /*** HEADER ***/
 .header {
-    min-height: 80vh;
+    min-height: 90vh;
     background: #F3F4F7 url('/images/headerbg.webp') no-repeat center 10vh;
     background-size: cover;
 }
@@ -246,6 +246,12 @@ html {
     }
 }
 
+@media (max-width: 1024px) {
+    .services .card {
+        padding: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     .services {
         padding-top: 70px;
@@ -264,6 +270,10 @@ html {
         margin-top: 20px;
     }
 
+    .services .card {
+        padding: 20px;
+    }
+
     .services .card .text {
         margin-bottom: 50px;
         max-width: 70%;
@@ -277,6 +287,10 @@ html {
 @media (max-width: 475px) {
     .services .right {
         margin-top: 1rem;
+    }
+
+    .services .card {
+        padding: 20px 15px;
     }
 
     .services .card .text {
@@ -473,6 +487,14 @@ html {
         text-align: center;
     }
 
+    .pusobnost h4 {
+        margin-bottom: 5px;
+    }
+
+    .pusobnost button {
+        margin-top: 20px;
+    }
+
     .pusobnost .right {
         margin-top: 20px;
     }
@@ -557,7 +579,6 @@ html {
     margin-top: 48px;
     display: grid;
     place-items: center;
-
 }
 
 .contact .container .row h2, .contact .container .row h4 {
@@ -572,16 +593,31 @@ html {
     font-size: 26px;
     padding: 20px 34px;
     display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .contact h4 {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 768px) {
     .contact {
         margin-top: 70px;
     }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact .row:nth-of-type(2) {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 475px) {
     .contact h2 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 }

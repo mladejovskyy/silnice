@@ -91,8 +91,14 @@ nav .btn-purple {
     }
 
     nav img {
+        height: 60px !important;
+        transform: translateY(0px);
         margin: 0.5rem 0;
-        transform: translateY(0);
+
+    }
+
+    .nav-bg-scroll nav img {
+        height: 60px !important;
     }
 
     nav .nav-links {
@@ -109,19 +115,19 @@ nav .btn-purple {
         padding-bottom: 2rem;
         margin-left: 0;
         margin-top: 0;
-        gap: 1.25em;
+        gap: 2em;
         height: fit-content;
         background-color: #F3F4F7;
         box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
     }
 
     .nav-bg nav .nav-links {
-        top: calc(80px + 0.5rem);
+        top: calc(60px + 0.5rem);
         transition: all .2s ease-in-out;
     }
 
     .nav-bg.nav-bg-scroll nav .nav-links {
-        top: calc(80px + 0.5rem);
+        top: calc(60px + 0.5rem);
     }
 
     nav .nav-links li {
