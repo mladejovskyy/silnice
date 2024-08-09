@@ -8,6 +8,11 @@ import './globals.css';
 import './style.css';
 import {useEffect, useState} from "react";
 import Link from 'next/link'
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import {Navigation, Pagination} from 'swiper/modules';
 
 export default function Home() {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -275,6 +280,28 @@ export default function Home() {
                                  draggable="false" loading="lazy" placeholder="blur" data-aos="fade-left"
                                  data-aos-once="true" data-aos-delay='50'/>
                         </div>
+                    </div>
+                    <div className="show-phone">
+                        <Swiper navigation={true} modules={[Navigation, Pagination]} pagination={true}
+                                className="mySwiper">
+                            <SwiperSlide>
+                                <img src="/images/prace1.webp" alt="" draggable="false" loading="lazy"
+                                     placeholder="blur"/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="/images/prace2.webp" alt="" draggable="false" loading="lazy"
+                                     placeholder="blur"/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="/images/prace4.webp" alt="" draggable="false" loading="lazy"
+                                     placeholder="blur"/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="/images/prace5.webp" alt="" draggable="false" loading="lazy"
+                                     placeholder="blur"/>
+                            </SwiperSlide>
+
+                        </Swiper>
                     </div>
                 </div>
             </section>
